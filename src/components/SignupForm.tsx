@@ -160,7 +160,7 @@ const SignUpForm = () => {
                             className="-mt-2 mr-2 h-10 w-10 fill-black"
                         />
                         <label htmlFor="agree" className="text-sm text-gray-500">
-                            Creating an account means you're okay with our{' '}
+                            Creating an account means you&apos;re okay with our{' '}
                             <a className="text-purple-900 cursor-pointer">Terms of Service,</a>
                             <a className="text-purple-900 cursor-pointer ml-1">Privacy Policy,</a> and our default
                             <a className="text-purple-900 cursor-pointer ml-1">Notification Settings.</a>

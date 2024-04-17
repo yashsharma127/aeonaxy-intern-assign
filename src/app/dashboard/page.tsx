@@ -1,4 +1,5 @@
-'use client'
+// Assuming this is your updated code
+'use client';
 import React from 'react';
 import Image from 'next/image';
 import Footer from '@/components/footer';
@@ -8,7 +9,7 @@ import { useSearchParams } from 'next/navigation';
 const Main = () => {
   const searchParams = useSearchParams(); 
   const profileImage = searchParams.get('prImage');
-  const email = searchParams.get( 'email' );
+  const email = searchParams.get('email');
 
   return (
     <div className="flex flex-col h-screen items-center">
@@ -19,15 +20,15 @@ const Main = () => {
         <h2 className="text-4xl font-bold mb-4">Please verify your email...</h2>
         <Image src="/gm.png" alt="alt" width={330} height={330} />
         <h4 className="font-sm text-gray-500 p-2 pb-6">
-          Please verify your email address. We've sent a confirmation email to:
+          Please verify your email address. We&apos;ve sent a confirmation email to:
         </h4>
         <h4 className="font-sm text-black p-2 pb-6 font-bold">{email}</h4>
         <h4 className="font-sm text-gray-500 p-2 pb-6">
           Click the confirmation link in that email to begin using Dribble.
         </h4>
         <h4 className="font-sm text-gray-500 p-2 pb-6">
-          Didn't receive the email? Check your spam folder, it may have been caught by a filter.
-          If you still don't see it, you can <a className="text-pink-500 font-bold cursor-pointer">resend the confirmation email</a>
+          Didn&apos;t receive the email? Check your spam folder, it may have been caught by a filter.
+          If you still don&apos;t see it, you can <a className="text-pink-500 font-bold cursor-pointer">resend the confirmation email</a>
         </h4>
         <h4 className="font-sm text-gray-500 p-2 pb-6">
           Wrong email address? <a className="text-pink-500 font-bold cursor-pointer">Change it.</a>

@@ -7,7 +7,7 @@ import { useSearchParams } from 'next/navigation';
 
 const Motive = () => {
     const searchParams = useSearchParams();
-    const profileImage = searchParams.get('profileimage'); // Ensure key matches the query parameter name
+    const profileImage = searchParams.get('profileimage');  
     const email = searchParams.get('email')
 
     const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
@@ -33,12 +33,12 @@ const Motive = () => {
             <div className="flex flex-col text-center w-auto p-4">
                 <h2 className="text-4xl font-bold mb-2">What brings you to Dribble</h2>
                 <h4 className="text-sm text-gray-500 p-2 pb-6">
-                    Select the options that best describe you. Don't worry, you can explore other options later
+                    Select the options that best describe you. Don&apos;t worry, you can explore other options later
                 </h4>
                 <div className="flex gap-8 mt-20">
                     <CenteredContent
                         imageSrc="/gf.png"
-                        textContent="I'm a designer looking to share my work"
+                        textContent="I&apos;m a designer looking to share my work"
                         description="With over seven million shots from a vast community of designers"
                         setIsCheckboxChecked={setIsCheckboxChecked}
                     />
@@ -46,7 +46,7 @@ const Motive = () => {
                     {/* Second instance of CenteredContent */}
                     <CenteredContent
                         imageSrc="/drlogo.png"
-                        textContent="I'm looking to hire a designer"
+                        textContent="I&apos;m looking to hire a designer"
                         description="With over seven million shots from a vast community of designers"
                         setIsCheckboxChecked={setIsCheckboxChecked}
                     />
@@ -54,7 +54,7 @@ const Motive = () => {
                     {/* Third instance of CenteredContent */}
                     <CenteredContent
                         imageSrc="/gm.png"
-                        textContent="I'm looking for design inspiration"
+                        textContent="I&apos;m looking for design inspiration"
                         description="With over seven million shots from a vast community of designers"
                         setIsCheckboxChecked={setIsCheckboxChecked}
                     />
