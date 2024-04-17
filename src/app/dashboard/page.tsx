@@ -1,6 +1,6 @@
 // Assuming this is your updated code
 'use client';
-import React from 'react';
+import React, { Suspense } from 'react';
 import Image from 'next/image';
 import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
@@ -12,6 +12,7 @@ const Main = () => {
   const email = searchParams.get('email');
 
   return (
+    <Suspense fallback={<div>Loading...</div>}>
     <div className="flex flex-col h-screen items-center">
       <div className="w-full">
         <Navbar profileImage={profileImage} />
@@ -38,6 +39,7 @@ const Main = () => {
         <Footer />
       </div>
     </div>
+    </Suspense>
   );
 };
 
