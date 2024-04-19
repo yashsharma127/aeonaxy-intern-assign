@@ -9,7 +9,7 @@ export default function Auth() {
       <div className="hidden lg:block w-1/2">
         <div className="relative lg:h-full">
           <Image
-            src="/bg.jpg"
+            src="./bg.jpg"
             alt="Image Alt Text"
             layout="fill"
             className="rounded-lg"
