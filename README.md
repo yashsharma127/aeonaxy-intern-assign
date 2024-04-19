@@ -2,7 +2,7 @@
 
 This repository contains my submission for the internship assignment focused on frontend design. The assignment was provided by Aeonaxy Technologies Private Limited and required developing a frontend with specific design requirements.
 
-## [Live Project Link](https://yashsharma127.github.io/aeonaxy-intern-assign/)
+## [Live Project Link](https://yashsharma127.github.io/aeonaxy-intern-assign/) (Click to Visit)
  
 ## Project Overview
 
@@ -14,14 +14,10 @@ The project involves creating a visually appealing frontend with three main page
 4. **Verify Dashboard Page:** Serves as a verification or dashboard interface.
 
 ## User Interface
-<img src="/readmeImages/1.png" width="400" height="200"> 
-<img src="/readmeImages/2.png" width="400" height="200">
-<img src="/readmeImages/3.png" width="400" height="200">
-<img src="/readmeImages/4.png" width="400" height="200">
-<img src="/readmeImages/5.png" width="400" height="200">
-<img src="/readmeImages/6.png" width="400" height="200">
-<img src="/readmeImages/7.png" width="400" height="200">
-<img src="/readmeImages/8.png" width="400" height="200">
+<img src="/readmeImages/1.png" width="400" height="200"> <img src="/readmeImages/2.png" width="400" height="200">
+<img src="/readmeImages/3.png" width="400" height="200"><img src="/readmeImages/4.png" width="400" height="200">
+<img src="/readmeImages/5.png" width="400" height="200"><img src="/readmeImages/6.png" width="400" height="200">
+<img src="/readmeImages/7.png" width="400" height="200"><img src="/readmeImages/8.png" width="400" height="200">
 
 ## Technologies Used
 
