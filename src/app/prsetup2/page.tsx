@@ -6,11 +6,32 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
 const Motive = () => {
-    const searchParams = useSearchParams();
-    const profileImage = searchParams.get('profileimage');
-    const email = searchParams.get('email')
+     
 
     const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
+
+    function Data() {
+        const searchParams = useSearchParams();
+        const profileImage = searchParams.get('profileimage');
+        const email = searchParams.get('email')
+        console.log(email);
+        console.log(profileImage);
+
+        return <Link href={{
+            pathname: "/dashboard",
+            query: {
+                prImage: profileImage,
+                email: email
+            }
+        }} >
+            <button
+                type="submit"
+                className={`w-[200px] ${isCheckboxChecked ? 'bg-pink-500 hover:bg-pink-400' : 'bg-pink-200 text-gray-500 cursor-not-allowed'} text-white font-bold py-2 rounded-md`}
+                disabled={!isCheckboxChecked}
+            >
+                Finish
+            </button></Link>
+    }
 
 
     return (
@@ -18,7 +39,7 @@ const Motive = () => {
             <div className="flex flex-col min-h-screen items-center">
                 <div className="flex justify-start p-8 w-full">
                     <Image src="/dlogo.png" alt="Image Alt Text" width={100} height={100} className="rounded-lg" />
-                    <Link href={
+                    {/* <Link href={
                         {
                             pathname: '/prsetup1',
                             query: {
@@ -29,7 +50,7 @@ const Motive = () => {
                         <button className="bg-gray-200 rounded-md p-1 h-[40px] px-4 ml-5 text-gray-700">
                             {'<'}
                         </button>
-                    </Link>
+                    </Link> */}
                 </div>
                 <div className="flex flex-col text-center w-auto p-4">
                     <h2 className="text-4xl font-bold mb-2">What brings you to Dribble</h2>
@@ -69,20 +90,7 @@ const Motive = () => {
                 )}
 
                 <div className="fixed bottom-28">
-                    <Link href={{
-                        pathname: "/dashboard",
-                        query: {
-                            prImage: profileImage,
-                            email: email
-                        }
-                    }} >
-                        <button
-                            type="submit"
-                            className={`w-[200px] ${isCheckboxChecked ? 'bg-pink-500 hover:bg-pink-400' : 'bg-pink-200 text-gray-500 cursor-not-allowed'} text-white font-bold py-2 rounded-md`}
-                            disabled={!isCheckboxChecked}
-                        >
-                            Finish
-                        </button></Link>
+                    <Data />
                 </div>
                 {/* Show when checkbox is checked */}
                 <div className="fixed bottom-20">

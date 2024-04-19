@@ -19,8 +19,6 @@ const Page = () => {
     agree: false,
     imagePreview: '',
   });
-  const searchParams = useSearchParams();
-  const email = searchParams.get('email');
 
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isReadyToSubmit, setIsReadyToSubmit] = useState(false);
@@ -36,6 +34,26 @@ const Page = () => {
     '/def/7.png',
     '/def/8.png',
   ];
+
+  function Data( ) {
+    const searchParams = useSearchParams();
+    const email = searchParams.get('email'); 
+
+    return <Link href={{
+      pathname: '/prsetup2',
+      query: {
+        profileimage: formData.imagePreview,
+        email: email
+      }
+    }} >
+      <button
+        type="submit"
+        disabled={!isReadyToSubmit}
+        className={`w-full ${isReadyToSubmit ? 'hover:bg-pink-400 bg-pink-500 cursor-pointer' : 'cursor-not-allowed bg-pink-200'} text-white font-bold py-2 md:py-3 rounded-md`}
+      >
+        Next
+      </button></Link>
+  }
 
   const handleImageChange = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -171,20 +189,7 @@ const Page = () => {
               />
             </div>
             <div className='w-[220px] text-center'>
-              <Link href={{
-                pathname: '/prsetup2',
-                query: {
-                  profileimage: formData.imagePreview,
-                  email: email
-                }
-              }} >
-                <button
-                  type="submit"
-                  disabled={!isReadyToSubmit}
-                  className={`w-full ${isReadyToSubmit ? 'hover:bg-pink-400 bg-pink-500 cursor-pointer' : 'cursor-not-allowed bg-pink-200'} text-white font-bold py-2 md:py-3 rounded-md`}
-                >
-                  Next
-                </button></Link>
+              <Data />
               {isReadyToSubmit && (
                 <p className='text-gray-500 mt-2'>or Press Return</p>
               )}

@@ -6,11 +6,13 @@ import Footer from '@/components/footer';
 import Navbar from '@/components/navbar';
 import { useSearchParams } from 'next/navigation';
 
+
 const Main = () => {
   const searchParams = useSearchParams(); 
   const profileImage = searchParams.get('prImage');
   const email = searchParams.get('email');
-
+  console.log(email);
+  console.log(profileImage);
   return (
     <Suspense fallback={<div>Loading...</div>}>
     <div className="flex flex-col h-screen items-center">
