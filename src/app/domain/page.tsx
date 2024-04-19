@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 
 const Motive = () => {
-     
+
 
     const [isCheckboxChecked, setIsCheckboxChecked] = useState(false);
 
@@ -33,24 +33,31 @@ const Motive = () => {
             </button></Link>
     }
 
+    function BackData() {
+        const searchParams = useSearchParams();
+        const email = searchParams.get('email')
+
+        return <Link href={
+            {
+                pathname: '/profile',
+                query: {
+                    email: email
+                }
+            }
+        }>
+            <button className="bg-gray-200 rounded-md p-1 h-[40px] px-4 ml-5 text-gray-700">
+                {'<'}
+            </button>
+        </Link>
+    }
+
 
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <div className="flex flex-col min-h-screen items-center">
                 <div className="flex justify-start p-8 w-full">
                     <Image src="./dlogo.png" alt="Image Alt Text" width={100} height={100} className="rounded-lg" />
-                    {/* <Link href={
-                        {
-                            pathname: '/prsetup1',
-                            query: {
-                                email: email
-                            }
-                        }
-                    }>
-                        <button className="bg-gray-200 rounded-md p-1 h-[40px] px-4 ml-5 text-gray-700">
-                            {'<'}
-                        </button>
-                    </Link> */}
+                    <BackData />
                 </div>
                 <div className="flex flex-col text-center w-auto p-4">
                     <h2 className="text-4xl font-bold mb-2">What brings you to Dribble</h2>

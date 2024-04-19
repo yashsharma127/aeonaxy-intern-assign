@@ -120,7 +120,7 @@ const Page = () => {
 
 
   const renderImage = () => {
-    let imageSource = formData.imagePreview || selectedAvatar || '/defp.png';
+    let imageSource = formData.imagePreview || selectedAvatar || './defp.png';
 
     return (
       <div
