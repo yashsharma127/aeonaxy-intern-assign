@@ -66,7 +66,7 @@ const Navbar = ({ profileImage }:any) => {
             {/* Logo */}
             <Link href="/">
               <div className="flex items-center">
-                <Image src="/dlogob.png" alt="Logo" width={100} height={100} className="rounded-lg" />
+                <Image src="./dlogob.png" alt="Logo" width={100} height={100} className="rounded-lg" />
               </div>
             </Link>
 

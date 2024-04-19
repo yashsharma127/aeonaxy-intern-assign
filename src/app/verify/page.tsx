@@ -29,7 +29,7 @@ const Main = () => {
         </div>
         <div className="flex flex-col justify-content items-center text-center lg:w-1/2 sm:w-3/5 h-full mt-14 p-4">
           <h2 className="text-4xl font-bold mb-4">Please verify your email...</h2>
-          <Image src="/gm.png" alt="alt" width={330} height={330} />
+          <Image src="./gm.png" alt="alt" width={330} height={330} />
           <h4 className="font-sm text-gray-500 p-2 pb-6">
             Please verify your email address. We&apos;ve sent a confirmation email to:
           </h4>

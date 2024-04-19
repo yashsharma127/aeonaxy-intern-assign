@@ -11,7 +11,7 @@ function Footer() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-6 mb-10">
 
             <div className="flex flex-col space-y-4">
-              <Image src="/dlogo.png" alt="Logo" width={100} height={100} className="rounded-lg" />
+              <Image src="./dlogo.png" alt="Logo" width={100} height={100} className="rounded-lg" />
               <h2 className="text-sm ">Please verify your email...</h2>
               <div className='flex gap-2'>
                 <Circle color="gray" size={20} className='cursor-pointer' />
@@ -104,7 +104,7 @@ function Footer() {
               <ul className='flex  items-center'>
                 <li className="text-sm font-bold mr-1">20,501,853</li>
                 <li className="text-sm md:ml-auto text-gray-500">shots dribbleed</li>
-                <li><img src='/drlogo.png' width={30} height={30} /></li>
+                <li><img src='./drlogo.png' width={30} height={30} /></li>
               </ul>
             </div>
           </div>

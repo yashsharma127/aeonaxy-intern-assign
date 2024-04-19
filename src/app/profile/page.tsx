@@ -25,14 +25,14 @@ const Page = () => {
   const [selectedAvatar, setSelectedAvatar] = useState<string>('');
 
   const defaultAvatars = [
-    '/def/1.png',
-    '/def/2.png',
-    '/def/3.png',
-    '/def/4.png',
-    '/def/5.png',
-    '/def/6.png',
-    '/def/7.png',
-    '/def/8.png',
+    './def/1.png',
+    './def/2.png',
+    './def/3.png',
+    './def/4.png',
+    './def/5.png',
+    './def/6.png',
+    './def/7.png',
+    './def/8.png',
   ];
 
   function Data( ) {
@@ -40,7 +40,7 @@ const Page = () => {
     const email = searchParams.get('email'); 
 
     return <Link href={{
-      pathname: '/prsetup2',
+      pathname: '/domain',
       query: {
         profileimage: formData.imagePreview,
         email: email
@@ -143,7 +143,7 @@ const Page = () => {
     <Suspense fallback={<div>Loading...</div>}>
       <div className="flex flex-col min-h-screen items-center">
         <div className="p-8 w-full">
-          <Image src="/dlogo.png" alt="Image Alt Text" width={120} height={120} className="rounded-lg" />
+          <Image src="./dlogo.png" alt="Image Alt Text" width={120} height={120} className="rounded-lg" />
         </div>
         <div className="w-full px-4 md:px-0 md:w-3/5 lg:w-1/2">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Welcome! Let&apos;s create your profile</h2>

@@ -169,7 +169,7 @@ const SignUpForm = () => {
 
                     {shouldNavigate ? (
                         <Link href={{
-                            pathname: "/prsetup1",
+                            pathname: "/profile",
                             query: {
                                 email: formData.email, 
                             }

@@ -18,7 +18,7 @@ const Motive = () => {
         console.log(profileImage);
 
         return <Link href={{
-            pathname: "/dashboard",
+            pathname: "/verify",
             query: {
                 prImage: profileImage,
                 email: email
@@ -38,7 +38,7 @@ const Motive = () => {
         <Suspense fallback={<div>Loading...</div>}>
             <div className="flex flex-col min-h-screen items-center">
                 <div className="flex justify-start p-8 w-full">
-                    <Image src="/dlogo.png" alt="Image Alt Text" width={100} height={100} className="rounded-lg" />
+                    <Image src="./dlogo.png" alt="Image Alt Text" width={100} height={100} className="rounded-lg" />
                     {/* <Link href={
                         {
                             pathname: '/prsetup1',
@@ -59,7 +59,7 @@ const Motive = () => {
                     </h4>
                     <div className="flex gap-8 mt-20">
                         <CenteredContent
-                            imageSrc="/gf.png"
+                            imageSrc="./gf.png"
                             textContent="I&apos;m a designer looking to share my work"
                             description="With over seven million shots from a vast community of designers"
                             setIsCheckboxChecked={setIsCheckboxChecked}
@@ -67,7 +67,7 @@ const Motive = () => {
 
                         {/* Second instance of CenteredContent */}
                         <CenteredContent
-                            imageSrc="/drlogo.png"
+                            imageSrc="./drlogo.png"
                             textContent="I&apos;m looking to hire a designer"
                             description="With over seven million shots from a vast community of designers"
                             setIsCheckboxChecked={setIsCheckboxChecked}
@@ -75,7 +75,7 @@ const Motive = () => {
 
                         {/* Third instance of CenteredContent */}
                         <CenteredContent
-                            imageSrc="/gm.png"
+                            imageSrc="./gm.png"
                             textContent="I&apos;m looking for design inspiration"
                             description="With over seven million shots from a vast community of designers"
                             setIsCheckboxChecked={setIsCheckboxChecked}
