@@ -1,6 +1,6 @@
 # Internship Assignment: Frontend Design
 
-This repository contains my submission for the internship assignment focused on frontend design. The assignment was provided by Aeonaxy Technologies Private Limited and required developing a frontend with specific design requirements.
+This repository contains my submission for the internship assignment focused on front-end design. The assignment was provided by Aeonaxy Technologies Private Limited and required developing a front end with specific design requirements.
 
 ## [Live Project Link](https://yashsharma127.github.io/aeonaxy-intern-assign/) (Click to Visit)
  
@@ -21,7 +21,7 @@ The project involves creating a visually appealing frontend with three main page
 
 ## Technologies Used
 
-- **Next.js:** Utilized for building the frontend, providing server-side rendering and routing capabilities.
+- **Next.js:** Utilized for building the front end, providing server-side rendering and routing capabilities.
 - **Tailwind CSS:** Used for styling the project, allowing for rapid development and customization of UI components.
 
 ## Setup Instructions
@@ -45,5 +45,5 @@ To run this project locally, follow these steps:
 
 ## Note
 
-Ensure that the design elements, layout, color schemes, typography, and responsiveness of the pages meet the provided design specifications. Make use of demo text, images, and logos as needed to enhance the visual presentation.
+Ensure that the pages' design elements, layout, color schemes, typography, and responsiveness meet the provided design specifications. Use demo text, images, and logos as needed to enhance the visual presentation.
  
