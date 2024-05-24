@@ -1,4 +1,4 @@
-# Internship Assignment: Frontend Design
+# Dribbble: Frontend Design
 
 This repository contains my submission for the internship assignment focused on front-end design. The assignment was provided by Aeonaxy Technologies Private Limited and required developing a front end with specific design requirements.
 
